@@ -6,12 +6,10 @@ if (menuBtn && navLinks) {
     navLinks.classList.toggle('show');
   }); 
 
-  // Close menu when a nav link is clicked
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => navLinks.classList.remove('show'));
   });
 }
-
 
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -47,4 +45,25 @@ if (videos.length > 0) {
     video.muted = true;
     videoObserver.observe(video);
   });
+}
+
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+if(contactForm){
+
+  contactForm.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    formMessage.textContent = "Message sent successfully.";
+    formMessage.style.opacity = "1";
+
+    contactForm.reset();
+
+    setTimeout(()=>{
+      formMessage.style.opacity = "0";
+    },3000);
+
+  });
+
 }

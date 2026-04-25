@@ -341,6 +341,15 @@ body {
   outline: 1px solid #ff7700;
 }
 
+#formMessage{
+  margin-top:18px;
+  font-size:15px;
+  color:#ff6b00;
+  text-align:center;
+  opacity:0;
+  transition:.4s ease;
+}
+
 .socials{
   display:flex;
   gap:14px;
