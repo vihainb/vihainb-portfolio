@@ -344,12 +344,13 @@ body {
 .socials{
   display:flex;
   gap:14px;
-  margin-top:25px;
+  margin-top:30px;
   flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
 }
 
 .socials a{
-  align-items: center;
   width:52px;
   height:52px;
   border-radius:50%;
@@ -368,6 +369,10 @@ body {
   background:#ff6b00;
   transform:translateY(-5px) scale(1.05);
   box-shadow:0 10px 20px rgba(255,107,0,.25);
+}
+
+.contact-left{
+  text-align:center;
 }
 
 /* Footer */
