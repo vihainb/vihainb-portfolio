@@ -303,18 +303,17 @@ body {
 /* Blogs Page */
 
 .blog-link{
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  text-decoration:none;
+  color:inherit;
+  display:block;
 }
 
 .blog-link .project-card{
-  height: auto;
-  transition: transform 0.3s ease;
+  height:100%;
 }
 
 .blog-link:hover .project-card{
-  transform: translateY(-8px);
+  transform:translateY(-8px);
 }
 
 /* Contact section */
@@ -342,14 +341,7 @@ body {
   outline: 1px solid #ff7700;
 }
 
-#formMessage{
-  margin-top:18px;
-  font-size:15px;
-  color:#ff6b00;
-  text-align:center;
-  opacity:0;
-  transition:.4s ease;
-}
+
 
 .socials{
   display:flex;
