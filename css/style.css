@@ -303,17 +303,18 @@ body {
 /* Blogs Page */
 
 .blog-link{
-  text-decoration:none;
-  color:inherit;
-  display:block;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .blog-link .project-card{
-  height:100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .blog-link:hover .project-card{
-  transform:translateY(-8px);
+  transform: translateY(-8px);
 }
 
 /* Contact section */
