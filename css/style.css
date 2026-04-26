@@ -233,11 +233,15 @@ body {
   margin-bottom:18px;
 }
 
-.thumb video{
+.thumb video,
+.thumb img{
   width:100%;
   height:100%;
   object-fit:cover;
+  display:block;
 }
+
+
 
 /* Cinematic project cards */
 
@@ -310,7 +314,7 @@ body {
 }
 
 .blog-link .project-card{
-  height:100%;
+  height:auto;
 }
 
 .blog-link:hover .project-card{
